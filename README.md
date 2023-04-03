@@ -10,7 +10,7 @@ A description of each data file is given below:
 ### Pressure Stick Data
 1. UNH_PSdataS21.mat
 
-    This file contains the raw data from the Pressure Stick for the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00).
+    This file contains the raw data from the Pressure Stick for the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Note this file is large so you will need to use a shared link to get to the location of the file to then download the data file.
     - P = raw pressure (mbar, [2056516x8] vector) 
     - dt = datetime ([2056516x1] vector)
     - dn = serial datenumber ([2056516x1] vector)
