@@ -99,3 +99,4 @@ A description of each data file is given below:
 
     This file contains offshore wave data from [Jeffrey's Ledge waverider buoy (station 44098) from the National Data Buoy Center (NDBC)](https://www.ndbc.noaa.gov/station_page.php?station=44098) throughout the full deployment time (September 10th 22:56:00 - September 12th 7:26:00). Used in (Marry & Foster, XXXX). Please see [Description of Measurements](https://www.ndbc.noaa.gov/measdes.shtml) for a discussion of each of the variables in this file.
     
+DOI: https://doi.org/10.5281/zenodo.7796469
