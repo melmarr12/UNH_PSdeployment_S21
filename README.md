@@ -60,6 +60,7 @@ A description of each data file is given below:
     This file contains data from the Pressure Stick, where the values have been calculated for each individual wave throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 7, 8, and 9 in (Marry & Foster, XXXX).
     - dPddzcrit = critical vertical pressure gradient value to induce momentary liquefaction as defined by Mory et al. (2007) ([1x1] vector)
     - WaveHeightsWbW = wave heights for each individual wave ([4628x1] vector)
+    - WavePeriodsWbW = wave periods for each individual wave ([4628x1] vector)
     - HoverhWbW = depth normalized wave height (H/h) for each individual wave ([4628x1] vector)
     - dPddt_W = maximum time derivative of pressure for each individual wave (m/s, [4628x1] vector)
     - dPddz_WM = maximum vertical pressure gradient of all sensor pairs in the sand for each individual wave ([4628x1] vector)
