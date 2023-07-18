@@ -8,17 +8,17 @@ This dataset is presented in the manuscript, "Field Observations of Vertical Pre
 A description of each data file is given below:
 
 ### Pressure Stick Data
-1. UNH_PSdataS21.mat
+1. Folder UNH_PSdataS21_Raw (or UNH_PSdataS21.mat)
 
-    This file contains the raw data from the Pressure Stick for the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Note this file is large so you will need to use a shared link to get to the location of the file to then download the data file.
-    - P = raw pressure (mbar, [2056516x8] vector) 
-    - dt = datetime ([2056516x1] vector)
-    - dn = serial datenumber ([2056516x1] vector)
-    - T = temperature (deg C, [2056516x8] vector)
-    - Pd = pressure head (m, [2056516x8] vector)
-    - z = sensor elevations (m, [1x8] vector, negative values in the sediment bed, sensor 1 is the top sensor closest to the circuitry/top of the instrument)
+    This folder (or file) contains the raw data from the Pressure Stick for the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Note this file is large so you will need to use a shared link to get to the location of the file to then download the data file.
+    - UNH_PSdataS21_P.txt (or P) = raw pressure (mbar, [2056516x8] vector) 
+    - UNH_PSdataS21_dt.txt (or dt) = datetime ([2056516x1] vector)
+    - UNH_PSdataS21_dn.txt (or dn) = serial datenumber ([2056516x1] vector)
+    - UNH_PSdataS21_T.txt (or T) = temperature (deg C, [2056516x8] vector)
+    - UNH_PSdataS21_Pd.txt (or Pd) = pressure head (m, [2056516x8] vector)
+    - UNH_PSdataS21_z.txt (or z) = sensor elevations (m, [1x8] vector, negative values in the sediment bed, sensor 1 is the top sensor closest to the circuitry/top of the instrument)
     
-2. UNH_PSdataS21_10min.mat
+2. UNH_PSdataS21_10min.csv (.mat)
 
     This file contains data from the Pressure Stick, where the values have been calculated for 10-minute segments of data throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 2 and 6 in (Marry & Foster, XXXX).
     - h = average water depth for each 10-minute segment (m, [194x1] vector) 
@@ -34,9 +34,9 @@ A description of each data file is given below:
     - S_W50 = median of the maximum Sleath parameter of each wave for each 10-minute segment ([194x1] vector)
     - Hoverh = depth normalized wave height (H/h) for each 10-minute segment ([194x1] vector)
     - dPddz_WM50 = median of the maximum vertical pressure gradient of all sensors in the sand for each wave for each 10-minute segment ([194x1] vector)
-    - dPddzcrit = critical vertical pressure gradient value to induce momentary liquefaction as defined by Mory et al. (2007) ([1x1] vector) 
+    - dPddzcrit = range of critical vertical pressure gradient values to induce momentary liquefaction as defined by Mory et al. (2007) ([2x1] vector) 
             
-3. UNH_PSdataS21_2min.mat
+3. UNH_PSdataS21_2min.csv (.mat)
 
     This file contains data from the Pressure Stick, where the values have been calculated for a two-minute time series of data (September 11th 2021 2:33:00 - 2:35:00). Used to plot Figures 4 and 5 in (Marry & Foster, XXXX).
     - dt2 = datetime for the two-minute time series ([2121x1] vector) 
@@ -53,12 +53,13 @@ A description of each data file is given below:
     - dtSlice_indexW4 = indices of the datetime values for the instantaneous vertical pressure profiles of the fourth selected wave in the two-minute time series ([1x6] vector)
     - dPddz2 = vertical pressure gradient for all sensor pairs for the two-minute time series ([2121x7] vector)
     - dPddt2 = time derivative of pressure for the two-minute time series ([2121x1] vector)
-    - dPddzcrit = critical vertical pressure gradient value to induce momentary liquefaction as defined by Mory et al. (2007) ([1x1] vector)
+    - dPddzcrit = range of critical vertical pressure gradient values to induce momentary liquefaction as defined by Mory et al. (2007) ([2x1] vector)
+    - Pe = excess pore pressure for all sensors for the two-minute time series (m, [2121x8] vector)
 
-4. UNH_PSdataS21_Waves.mat
+4. UNH_PSdataS21_Waves.csv (.mat)
 
     This file contains data from the Pressure Stick, where the values have been calculated for each individual wave throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 7, 8, and 9 in (Marry & Foster, XXXX).
-    - dPddzcrit = critical vertical pressure gradient value to induce momentary liquefaction as defined by Mory et al. (2007) ([1x1] vector)
+    - dPddzcrit = range of critical vertical pressure gradient values to induce momentary liquefaction as defined by Mory et al. (2007) ([2x1] vector)
     - WaveHeightsWbW = wave heights for each individual wave ([4628x1] vector)
     - WavePeriodsWbW = wave periods for each individual wave ([4628x1] vector)
     - HoverhWbW = depth normalized wave height (H/h) for each individual wave ([4628x1] vector)
@@ -75,7 +76,7 @@ A description of each data file is given below:
     - S_WO = maximum Sleath parameter for a theoretical sinusoidal wave for each individual wave ([4628x1] vector)            
 
 ### GPS Data
-1. UNH_GPS_S21_20210908.mat (.pos)
+1. UNH_GPS_S21_20210908.txt (.pos) (.mat) 
 
     This file contains data from a GPS survey taken on September 8th 2021 as the pre-deployment survey. Used to plot Figure 3 in (Marry & Foster, XXXX). 
     - GPST = time stamp of the survey sample 
@@ -85,7 +86,7 @@ A description of each data file is given below:
     - Q = quality of the data point. Q = 1 is a 'good' data point, Q = 2 is an 'okay' data point, and Q > 2 are 'bad' data points. 
     - ns = Number of satellites
     
-2. UNH_GPS_S21_20211026.mat (.pos)
+2. UNH_GPS_S21_20211026.txt (.pos) (.mat)
 
     This file contains data from a GPS survey taken on October 26th 2021 as the post-deployment survey. Used to plot Figure 3 in (Marry & Foster, XXXX). 
     - GPST = time stamp of the survey sample 
@@ -96,7 +97,7 @@ A description of each data file is given below:
     - ns = Number of satellites
 
 ### Waverider Buoy (NDBC station 44098) Data
-1. NDBC_44098_JeffreysLedgeBuoy_S21.mat (.txt)
+1. NDBC_44098_JeffreysLedgeBuoy_S21.txt (.mat)
 
     This file contains offshore wave data from [Jeffrey's Ledge waverider buoy (station 44098) from the National Data Buoy Center (NDBC)](https://www.ndbc.noaa.gov/station_page.php?station=44098) throughout the full deployment time (September 10th 22:56:00 - September 12th 7:26:00). Used in (Marry & Foster, XXXX). Please see [Description of Measurements](https://www.ndbc.noaa.gov/measdes.shtml) for a discussion of each of the variables in this file.
     
