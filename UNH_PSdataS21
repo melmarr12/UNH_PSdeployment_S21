@@ -1,3 +1,9 @@
-This data file was too large to upload to GitHub. Please use the link below to access the raw data file ('UNH_PSdataS21.mat').
+This data file was too large to upload to GitHub. Please use the link below to access the raw data file ('UNH_PSdataS21.mat'). 
 
 https://universitysystemnh-my.sharepoint.com/:u:/g/personal/mm1723_usnh_edu/EV7ljRon27FBqymumssjJd0BY8OJ0HcF0P4pvBhacS8Ufw?e=DFPpov 
+
+There are also .txt files available of the raw data. Each file contains one variable. 
+For example 'UNH_PSdataS21_P.txt' contains the raw pressur data from all 8 sensors for this experiment.
+Please use the link below to access the raw data in .txt format. 
+
+https://universitysystemnh-my.sharepoint.com/:f:/g/personal/mm1723_usnh_edu/EoQMvuGk6nBKjv_8XPcjtNcBXgejsUGkP7JRZrc7rX5lKQ?e=h8m7G0
