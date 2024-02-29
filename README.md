@@ -2,7 +2,7 @@
 
 This project contains the data collected by the University of New Hampshire (UNH) Coastal Processes Lab for a field experiment in September 2021. The data was collected at Wallis Sands Beach in Rye, NH. The main instrument utilized was the Pressure Stick (PS), which is a fully autonomous pressure-profiling instrument. The PS contains eight micro-controlled, time-synced TE Connectivity MS5837 Bar02 pressure and temperature sensors distributed along a 70 cm distance to measure pressure throughout the water column and into the sediment bed. Global Positioning System (GPS) surveys of the beach profile were also completed before and after the experiment, and the survey data is also included in this project. Data of the offshore wave conditions as measured by the [Jeffrey's Ledge waverider buoy (station 44098) from the National Data Buoy Center (NDBC)](https://www.ndbc.noaa.gov/station_page.php?station=44098) is given here as well.
 
-This dataset is presented in the manuscript, "Field Observations of Vertical Pressure Head Gradients in a Nearshore Sediment Bed; A Case for Momentary Liquefaction" (Marry & Foster, XXXX) which has been submitted to the Journal of Geophysical Research: Oceans in 2023. 
+This dataset is presented in the manuscript, "Field Observations of Hydrostatic Pressure Deviations in a Nearshore Sediment Bed" (Marry & Foster, 2024) which has been published in the Journal of Geophysical Research: Oceans. 
 
 ## Dataset files
 A description of each data file is given below:
@@ -20,7 +20,7 @@ A description of each data file is given below:
     
 2. UNH_PSdataS21_10min.csv (.mat)
 
-    This file contains data from the Pressure Stick, where the values have been calculated for 10-minute segments of data throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 2 and 6 in (Marry & Foster, XXXX).
+    This file contains data from the Pressure Stick, where the values have been calculated for 10-minute segments of data throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 2 and 6 in (Marry & Foster, 2024).
     - h = average water depth for each 10-minute segment (m, [194x1] vector) 
     - chunk_mean = mean datetime value for each 10-minute segment ([194x1] vector)
     - Hsig = significant wave height for each 10-minute segment (m, [194x1] vector)
@@ -38,7 +38,7 @@ A description of each data file is given below:
             
 3. UNH_PSdataS21_2min.csv (.mat)
 
-    This file contains data from the Pressure Stick, where the values have been calculated for a two-minute time series of data (September 11th 2021 2:33:00 - 2:35:00). Used to plot Figures 4 and 5 in (Marry & Foster, XXXX).
+    This file contains data from the Pressure Stick, where the values have been calculated for a two-minute time series of data (September 11th 2021 2:33:00 - 2:35:00). Used to plot Figures 4 and 5 in (Marry & Foster, 2024).
     - dt2 = datetime for the two-minute time series ([2121x1] vector) 
     - Pd2 = pressure for all sensors for the two-minute time series (m, [2121x8] vector)
     - Pd_hydro2 = expected hydrostatic pressure for all sensors for the two-minute time series (m, [2121x8] vector)
@@ -58,7 +58,7 @@ A description of each data file is given below:
 
 4. UNH_PSdataS21_Waves.csv (.mat)
 
-    This file contains data from the Pressure Stick, where the values have been calculated for each individual wave throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 7, 8, and 9 in (Marry & Foster, XXXX).
+    This file contains data from the Pressure Stick, where the values have been calculated for each individual wave throughout the full deployment time (September 10th 2021 22:55:00 - September 12th 7:15:00). Used to plot Figures 7 and 8 in (Marry & Foster, 2024).
     - dPddzcrit = range of critical vertical pressure gradient values to induce momentary liquefaction as defined by Mory et al. (2007) ([2x1] vector)
     - WaveHeightsWbW = wave heights for each individual wave ([4628x1] vector)
     - WavePeriodsWbW = wave periods for each individual wave ([4628x1] vector)
@@ -78,7 +78,7 @@ A description of each data file is given below:
 ### GPS Data
 1. UNH_GPS_S21_20210908.txt (.pos) (.mat) 
 
-    This file contains data from a GPS survey taken on September 8th 2021 as the pre-deployment survey. Used to plot Figure 3 in (Marry & Foster, XXXX). 
+    This file contains data from a GPS survey taken on September 8th 2021 as the pre-deployment survey. Used to plot Figure 3 in (Marry & Foster, 2024). 
     - GPST = time stamp of the survey sample 
     - latitude = latitude in degrees
     - longitude = longitude in degrees
@@ -88,7 +88,7 @@ A description of each data file is given below:
     
 2. UNH_GPS_S21_20211026.txt (.pos) (.mat)
 
-    This file contains data from a GPS survey taken on October 26th 2021 as the post-deployment survey. Used to plot Figure 3 in (Marry & Foster, XXXX). 
+    This file contains data from a GPS survey taken on October 26th 2021 as the post-deployment survey. Used to plot Figure 3 in (Marry & Foster, 2024). 
     - GPST = time stamp of the survey sample 
     - latitude = latitude in degrees
     - longitude = longitude in degrees
@@ -99,7 +99,7 @@ A description of each data file is given below:
 ### Waverider Buoy (NDBC station 44098) Data
 1. NDBC_44098_JeffreysLedgeBuoy_S21.txt (.mat)
 
-    This file contains offshore wave data from [Jeffrey's Ledge waverider buoy (station 44098) from the National Data Buoy Center (NDBC)](https://www.ndbc.noaa.gov/station_page.php?station=44098) throughout the full deployment time (September 10th 22:56:00 - September 12th 7:26:00). Used in (Marry & Foster, XXXX). Please see [Description of Measurements](https://www.ndbc.noaa.gov/measdes.shtml) for a discussion of each of the variables in this file.
+    This file contains offshore wave data from [Jeffrey's Ledge waverider buoy (station 44098) from the National Data Buoy Center (NDBC)](https://www.ndbc.noaa.gov/station_page.php?station=44098) throughout the full deployment time (September 10th 22:56:00 - September 12th 7:26:00). Used in (Marry & Foster, 2024). Please see [Description of Measurements](https://www.ndbc.noaa.gov/measdes.shtml) for a discussion of each of the variables in this file.
     
 DOI: v1.1.0: https://doi.org/10.5281/zenodo.8161628
      v1.0.0: https://doi.org/10.5281/zenodo.7796469
